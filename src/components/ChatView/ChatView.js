@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Text, StyleSheet } from 'react-native';
+import { 
+    View,
+    ScrollView,
+    Text,
+    Dimensions,
+    StyleSheet
+} from 'react-native';
 import ChatIn from '../ChatIn/ChatIn';
 import ChatOut from '../ChatOut/ChatOut';
-import TextTyper from '../TextTyper/TextTyper';
 
 class ChatView extends Component{
     render(){
         return(
-            <View>
+            <View style={styles.container}>
                 <View style={styles.chatView}>
                     <View style={styles.space}></View>
                     <ChatIn
@@ -25,7 +30,7 @@ class ChatView extends Component{
                     <ChatIn
                         text="Gejala-gejala apa saja yang kamu alami?"
                         />
-                    {/* <ChatIn
+                    <ChatIn
                         text="Bisa tolong ceritakan hal-hal yang membuat kamu tertekan selama ini. Gejala-gejala apa saya yang kamu alami belakangan ini"
                     />
                     <ChatOut
@@ -33,23 +38,27 @@ class ChatView extends Component{
                         />
                     <ChatIn
                         text="Baik, cerita anda aman bersama saya"
-                    /> */}
-                    <View style={styles.space}></View>
+                    />
+                    <View style={styles.spaceBig}></View>
                 </View>
-
-                <TextTyper />
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    container: {
+        
+    },
     chatView: {
         flex: 1,
         paddingHorizontal: 20
     },
     space: {
         height: 10
+    },
+    spaceBig: {
+        height: 70
     }
 })
 

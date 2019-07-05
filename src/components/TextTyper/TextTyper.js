@@ -13,8 +13,8 @@ class TextTyper extends Component{
                     />
                 </View>
                 <View style={styles.sendButtonContainer}>
-                    <TouchableOpacity >
-                        <Icon name="md-send" color="#222222" size={40} />
+                    <TouchableOpacity style={styles.sendButton}>
+                        <Icon name="md-send" color="#FFFFFF" size={25} />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -25,7 +25,11 @@ class TextTyper extends Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
         flexDirection: 'row',
+        width: '100%',
         height: 60,
         padding: 10,
         alignItems: 'center',
@@ -33,7 +37,7 @@ const styles = StyleSheet.create({
     },
     textInputContainer: {
         flex: 1,
-        width: '85%',
+        width: '86%',
     },
     textInput: {
         borderColor: 'red',
@@ -42,11 +46,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff'
     }, 
     sendButtonContainer: {
-        width: '10%',
+        width: '11%',
         marginLeft: '2%'
     },
     sendButton: {
-        backgroundColor: 'red'
+        flex: 1,
+        borderRadius: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#6072FA'
     }
 })
 

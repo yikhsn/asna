@@ -29,7 +29,7 @@ const ReadNavigator = createStackNavigator(
         }
     },
     {
-        initialRouteName: 'ChattingScreen',
+        initialRouteName: 'HomeScreen',
         defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#6072FA',
