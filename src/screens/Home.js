@@ -6,7 +6,9 @@ class Home extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <HomeNavigation />
+                <HomeNavigation 
+                    navigation={this.props.navigation}
+                />
             </View>
         )
     }

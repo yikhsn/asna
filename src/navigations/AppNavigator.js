@@ -1,6 +1,9 @@
 import Home from '../screens/Home';
 import Chatting from '../screens/Chatting';
 import Single from '../screens/Single';
+import Report from '../screens/Report';
+import Therapy from '../screens/Therapy';
+import Explore from '../screens/Explore';
 
 import { 
     createStackNavigator,
@@ -25,6 +28,24 @@ const ReadNavigator = createStackNavigator(
             screen: Single,
             navigationOptions: {
                 title: 'Single'
+            }
+        },
+        ReportScreen: {
+            screen: Report,
+            navigationOptions: {
+                title: 'Laporan'
+            }
+        },
+        ExploreScreen: {
+            screen: Explore,
+            navigationOptions: {
+                title: 'Jelajah'
+            }
+        },
+        TherapyScreen: {
+            screen: Therapy,
+            navigationOptions: {
+                title: 'Terapi'
             }
         }
     },
