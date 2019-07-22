@@ -12,7 +12,7 @@ import { dialogflowConfig } from '../dialogFlow/env';
 const BOT_USER = {
     _id: 2,
     name: 'FAQ Bot',
-    avatar: 'https://i.imgur.com/7k12EPD.png'
+    avatar: 'https://static.thenounproject.com/png/1155091-200.png'
 };
 
 // const screenHeight = Dimensions.get('window').height;

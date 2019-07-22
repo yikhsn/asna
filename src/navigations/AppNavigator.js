@@ -15,7 +15,8 @@ const ReadNavigator = createStackNavigator(
         HomeScreen: {
             screen: Home,
             navigationOptions: {
-                title: 'Beranda'
+                title: 'Beranda',
+                header: null
             }
         },
         ChattingScreen: {
